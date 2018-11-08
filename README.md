@@ -35,8 +35,7 @@ Because when passing real world data like faces,images of buildings, there are a
 
 Sounds good. How do we do that ?
 
-For the generator we pass in Z (Random Noise) along with C (categorical distribution). Note that C's distribution may vary with the application to Gaussian / whatever. If it is a categorical distribution, you expect C to be one-hot encoded vector.
-Like [0 0 0 1] for representing a concept. We start with a uniformly distributed C [0.2 0.2 0.2 0.2 0.2].
+For the generator we pass in Z (Random Noise) along with C (categorical distribution). Note that C's distribution may vary with the application to Gaussian / whatever. If it is a categorical distribution, you expect each dimension in C to hold some information regarding shape, rotation etc. For example, [0 0 0 1] may represent a latent concept like rotation. We start with a uniformly distributed C [0.2 0.2 0.2 0.2 0.2].
 
 
 And with the training process, we expect neural network architecture to update C.
