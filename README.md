@@ -51,3 +51,4 @@ Process is similar,
 # References
 [1] Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, Pieter Abbeel, "InfoGAN: Interpretable Representation Learning by
 Information Maximizing Generative Adversarial Nets", June 2016 (https://arxiv.org/pdf/1606.03657.pdf)
+[2] Agustinus Kristiadi on InfoGAN(https://wiseodd.github.io/techblog/2017/01/29/infogan/)
