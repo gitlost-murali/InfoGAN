@@ -28,7 +28,7 @@ Notice the differences and work on them  == Compute gradients and update weights
 Conditional GANs = If you've gone through the above description of GANs, you might have understood that generator generates samples from random noise(Entangled Representation). Wouldn't it be nice if we input a known vector (Disentangled representation) instead of random noise ? Let's say I want to generate handwritten images of a given number. This (Label ===> model ==> image) is the reverse of image classification (image ===> model ==> Label). We are passing in conditional information to the generator for producing images. On the other hand, instead of making the discriminator just classify the images real/fake we pass the label along with the image. Now discriminating, it is classifying whether the label given to the input image is true/not.
 
 
-#InfoGAN = This is similar to Conditional GANs, but we don't want to specify the information. Let's make neural networks do that for us ? But WHY ?
+# InfoGAN = This is similar to Conditional GANs, but we don't want to specify the information. Let's make neural networks do that for us. But WHY ?
 
 Because when passing real world data like faces,images of buildings, there are a lot of hidden concepts a.k.a Latent concepts. Neural Networks are capable of capturing this latent concepts well because of their non-linear activation functions.
 
