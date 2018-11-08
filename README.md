@@ -47,3 +47,7 @@ Process is similar,
 1.Train discriminator (As usual)
 2.Train Generator (As usual)
 3.Generate samples from given random noise and initial C. These generated samples are given to Q_C, which in turn learns to embed latent concepts.
+
+# References
+[1] Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, Pieter Abbeel, "InfoGAN: Interpretable Representation Learning by
+Information Maximizing Generative Adversarial Nets", June 2016 (https://arxiv.org/pdf/1606.03657.pdf)
