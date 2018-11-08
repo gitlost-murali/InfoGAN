@@ -24,7 +24,7 @@ know the places where we fail to fool the police == Compute loss
 
 Notice the differences and work on them  == Compute gradients and update weights of generator
 
-There's an interesting hypothesis given in DCGAN paper that there are structures in the random noise vectors which enforce meaningful and consistent impact on the generator. Example given below is from the DCGAN paper, you could see that when input noise vectors of men are manipulated to generate images of women with glasses from generator when resulting (manipulated) noise vector is fed. This is impressive and you could also notice that this is similar to arithmetic involved in word embeddings' famous example of King - Man + Woman = Queen
+There's an interesting hypothesis given in DCGAN(Deep Convolutional GAN) paper that there are structures in the random noise vectors which enforce meaningful and consistent impact on the generator. Example given below, is from the DCGAN paper, you could see that when input noise vectors of men are manipulated, images of women with glasses are generated from generator when resulting (manipulated) noise vector is fed. This is impressive and you could also notice that this is similar to arithmetic involved in word embeddings' famous example of King - Man + Woman = Queen
 
 ![dc-gan](https://github.com/Murali81/InfoGAN/blob/master/dc_gan.png)
 
@@ -54,4 +54,8 @@ Process is similar,
 [1] Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, Pieter Abbeel, "InfoGAN: Interpretable Representation Learning by
 Information Maximizing Generative Adversarial Nets", June 2016 (https://arxiv.org/pdf/1606.03657.pdf)
 
-[2] Agustinus Kristiadi on InfoGAN (https://wiseodd.github.io/techblog/2017/01/29/infogan/)
+[2] Alec Radford, Luke Metz and Soumith Chintala, "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks" Jan 2016 (https://arxiv.org/pdf/1511.06434)
+
+[3] Mehdi Mirza, Simon Osindero, "Conditional Generative Adversarial Nets", Nov 2014 (https://arxiv.org/pdf/1411.1784)
+
+[4] Agustinus Kristiadi on InfoGAN (https://wiseodd.github.io/techblog/2017/01/29/infogan/)
