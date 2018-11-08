@@ -5,8 +5,8 @@ Regarding the latent concepts, change the C vector to explore various hidden con
 
 For a better understanding of InfoGANs, it's better to have grip on GANs, CGANs (Conditional GANs).
 
-GAN = Generative Adversarial Network , has two neural networks , one called as generator and other is a discriminator. The 
-task of generator is to mimic the probability distribution of given dataset. At a high level, a generative model means you have mapped the probability distribution of the data itself. In the case of images, that means you have a probability for every possible combination of pixel values. This also means you can generate new data points by sampling from this distribution ( by choosing combinations with large probability). In Computer vision, this means that we can generate new images entirely from no prior data.
+### GAN = Generative Adversarial Network ,
+has two neural networks , one called as generator and other is a discriminator. The task of generator is to mimic the probability distribution of given dataset. At a high level, a generative model means you have mapped the probability distribution of the data itself. In the case of images, that means you have a probability for every possible combination of pixel values. This also means you can generate new data points by sampling from this distribution ( by choosing combinations with large probability). In Computer vision, this means that we can generate new images entirely from no prior data.
 
 The way it works is similar to a thief and police story. Imagine that a thief always wants to generate fake notes (mimic actual images distribution / mimic actual images (pixel combinations) ) and fool the police to get away with it. Police, on the other hand, wants to determine ways to detect fake notes (To detect a sample that comes from generated probability distribution). It is like a constant mutual development process.
 
@@ -25,10 +25,11 @@ know the places where we fail to fool the police == Compute loss
 Notice the differences and work on them  == Compute gradients and update weights of generator
 
 
-Conditional GANs = If you've gone through the above description of GANs, you might have understood that generator generates samples from random noise(Entangled Representation). Wouldn't it be nice if we input a known vector (Disentangled representation) instead of random noise ? Let's say I want to generate handwritten images of a given number. This (Label ===> model ==> image) is the reverse of image classification (image ===> model ==> Label). We are passing in conditional information to the generator for producing images. On the other hand, instead of making the discriminator just classify the images real/fake we pass the label along with the image. Now discriminating, it is classifying whether the label given to the input image is true/not.
+### Conditional GANs :
+If you've gone through the above description of GANs, you might have understood that generator generates samples from random noise(Entangled Representation). Wouldn't it be nice if we input a known vector (Disentangled representation) instead of random noise ? Let's say I want to generate handwritten images of a given number. This (Label ===> model ==> image) is the reverse of image classification (image ===> model ==> Label). We are passing in conditional information to the generator for producing images. On the other hand, instead of making the discriminator just classify the images real/fake we pass the label along with the image. Now discriminating, it is classifying whether the label given to the input image is true/not.
 
 
-# InfoGAN = This is similar to Conditional GANs, but we don't want to specify the information. Let's make neural networks do that for us. But WHY ?
+## InfoGAN = This is similar to Conditional GANs, but we don't want to specify the information. Let's make neural networks do that for us. But WHY ?
 
 Because when passing real world data like faces,images of buildings, there are a lot of hidden concepts a.k.a Latent concepts. Neural Networks are capable of capturing this latent concepts well because of their non-linear activation functions.
 
