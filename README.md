@@ -1,6 +1,6 @@
 # InfoGAN
 A demo script explaining [InfoGAN](https://arxiv.org/pdf/1606.03657.pdf) on MNIST Dataset
-
+[alt_text](https://github.com/Murali81/InfoGAN/blob/master/movie.gif)
 Regarding the latent concepts, change the C vector to explore various hidden concepts. 
 
 For a better understanding of InfoGANs, it's better to have grip on GANs, CGANs (Conditional GANs).
