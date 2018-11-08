@@ -24,6 +24,9 @@ know the places where we fail to fool the police == Compute loss
 
 Notice the differences and work on them  == Compute gradients and update weights of generator
 
+There's an interesting hypothesis given in DCGAN paper that there are structures in the random noise vectors which enforce meaningful and consistent impact on the generator. Example given below is from the DCGAN paper, you could see that when input noise vectors of men are manipulated to generate images of women with glasses from generator when resulting (manipulated) noise vector is fed. This is impressive and you could also notice that this is similar to arithmetic involved in word embeddings' famous example of King - Man + Woman = Queen
+
+![dc-gan](https://github.com/Murali81/InfoGAN/blob/master/dc_gan.png)
 
 ### Conditional GANs :
 If you've gone through the above description of GANs, you might have understood that generator generates samples from random noise(Entangled Representation). Wouldn't it be nice if we input a known vector (Disentangled representation) instead of random noise ? Let's say I want to generate handwritten images of a given number. This (Label ===> model ==> image) is the reverse of image classification (image ===> model ==> Label). We are passing in conditional information to the generator for producing images. On the other hand, instead of making the discriminator just classify the images real/fake we pass the label along with the image. Now discriminating, it is classifying whether the label given to the input image is true/not.
