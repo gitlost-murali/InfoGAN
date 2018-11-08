@@ -1,5 +1,7 @@
 # InfoGAN
-A demo script explaining InfoGAN on MNIST Dataset
+A demo script explaining [InfoGAN](https://arxiv.org/pdf/1606.03657.pdf) on MNIST Dataset
+
+Regarding the latent concepts, change the C vector to explore various hidden concepts. 
 
 For a better understanding of InfoGANs, it's better to have grip on GANs, CGANs (Conditional GANs).
 
@@ -43,4 +45,4 @@ There's only one change compared to GANs & CGANs i.e an additional neural networ
 Process is similar,
 1.Train discriminator (As usual)
 2.Train Generator (As usual)
-3.Generate samples from given random noise and initial C. These generated samples are given to Q_C.
+3.Generate samples from given random noise and initial C. These generated samples are given to Q_C, which in turn learns to embed latent concepts.
